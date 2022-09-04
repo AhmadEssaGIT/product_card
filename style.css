@@ -1,0 +1,114 @@
+
+:root {
+	--darkCyan: hsl(158, 36%, 37%);
+	--cream: hsl(30, 38%, 92%);
+	
+	/* Netural  */
+	--veryDarkBlue: hsl(212, 21%, 14%);
+ 	--darkGrayishBlue: hsl(228, 12%, 48%);
+	--white : hsl(0, 0%, 100%); 
+}
+* {
+	padding : 0 ; 
+	margin : 0 ; 
+	box-sizing: border-box;
+	font-family: Montserrat;
+}
+
+p {  
+	font-size : 14px ; 
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw ;
+	height:  100vh ;
+	background-color:  var(--cream);
+}
+.container { 
+	width: 45%;
+	height: 70%;
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px ;
+ 	overflow: hidden;
+ }
+
+.container .left{ 
+	width: 100%;
+	height: 100%;
+	background-image: url('./images/image-product-desktop.jpg');
+	background-size: cover;
+	background-position : center; 
+
+}
+
+.container .right { 
+	background : var(--white);
+	width: 100%;
+}
+.container .right h6{
+	text-transform : uppercase;
+	letter-spacing: 5px;
+	font-weight:  500;
+	color: var(--darkGrayishBlue);
+}
+
+.container .right h1 {
+	width: 70%;
+	line-height: 30px;
+	font-weight: 700;
+	font-family :Fraunces;
+}
+
+.container .right p {
+	color : var(--darkGrayishBlue);
+	width: 80%;
+}
+
+.price {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+}
+.big {
+	font-size : 2rem ;
+	font-weight: 700;
+	font-family: Fraunces;
+	color: var(--darkCyan);
+	margin-right :1rem ;
+}
+.small {
+	font-size: 14px;
+	text-decoration: line-through;
+	color: var(--darkGrayishBlue);
+}
+
+.button {
+	/*text-align : center;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid none ;
+	background-color : var(--darkCyan); 
+	color: var(--white);
+	width: 70%;
+	height: 10%; 
+	border-radius: 10px;
+}
+
+
+.container .right h6 , 
+.container .right h1 ,
+.container .right p ,
+.container .right .price ,
+.container .right .button 
+{
+	margin-left: 2rem;
+	margin-top : 2rem;
+} 
+
+
