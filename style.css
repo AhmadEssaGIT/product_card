@@ -31,7 +31,7 @@ p {
 	width: 45%;
 	height: 70%;
 	display: flex;
-	flex-direction: row;
+
 	border-radius: 10px ;
  	overflow: hidden;
  }
@@ -98,8 +98,18 @@ p {
 	width: 70%;
 	height: 10%; 
 	border-radius: 10px;
+	transition: 0.2s all ease-in;
 }
-
+ .cart { 
+ 	border-color: white ;
+ 	/*background-color : var(--white)*/
+ 	width: 15px ;
+ 	height: 15px;
+  	background-image : url(./images/icon-cart.svg);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	margin-right: 0.75rem;
+  }
 
 .container .right h6 , 
 .container .right h1 ,
@@ -111,4 +121,49 @@ p {
 	margin-top : 2rem;
 } 
 
+	.button:hover {
+	cursor: pointer; 
+	background-color : var(--veryDarkBlue);		
+ }
 
+@media  screen and (max-width  : 768px ){
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 90%;
+		height: 95%;
+		
+	}
+
+
+	 .left {
+	 	max-height : 40% ; 
+		background-size : cover ; 
+	 }
+
+	.right {
+	 	height : 60% ;  
+	 	font-size:  100%;
+	 }
+
+	.container .right h6 , 
+	.container .right h1 ,
+	.container .right p ,
+	.container .right .price ,
+	.container .right .button 
+	{
+		margin-left: 2rem;
+		margin-top : 1rem;
+	} 
+
+	.container .right h1 {		
+		line-height: 40px;		
+	}
+	.button {
+		height : 12%;
+		width: 80%; 
+	}
+
+}
